@@ -8,7 +8,7 @@ const SearchForm = ({ onSearch }) => {
   const [loading, setLoading] = useState(false);
   const [focused, setFocused] = useState(false);
   const [suggestions] = useState([
-    'New York', 'London', 'Tokyo', 'Paris', 'Sydney', 'Dubai', 'Singapore', 'Mumbai'
+    'Colombo', 'Kandy', 'Galle', 'Matara', 'Jaffna', 'Rathnapura', 'Matale', 'Mannar'
   ]);
   const [showSuggestions, setShowSuggestions] = useState(false);
   const inputRef = useRef(null);

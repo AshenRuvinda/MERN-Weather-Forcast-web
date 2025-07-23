@@ -19,11 +19,11 @@ const Home = () => {
         console.error('Error fetching history:', error);
         // Set mock data for demonstration
         setHistory([
-          { city: 'New York', timestamp: new Date(Date.now() - 1000000) },
-          { city: 'London', timestamp: new Date(Date.now() - 2000000) },
-          { city: 'Tokyo', timestamp: new Date(Date.now() - 3000000) },
-          { city: 'Paris', timestamp: new Date(Date.now() - 4000000) },
-          { city: 'Sydney', timestamp: new Date(Date.now() - 5000000) }
+          { city: 'Colombo', timestamp: new Date(Date.now() - 1000000) },
+          { city: 'Galle', timestamp: new Date(Date.now() - 2000000) },
+          { city: 'Matara', timestamp: new Date(Date.now() - 3000000) },
+          { city: 'Kandy', timestamp: new Date(Date.now() - 4000000) },
+          { city: 'Jaffna', timestamp: new Date(Date.now() - 5000000) }
         ]);
       } finally {
         setLoading(false);
