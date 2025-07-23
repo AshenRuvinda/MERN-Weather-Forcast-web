@@ -181,7 +181,7 @@ const Home = () => {
           <span className="text-slate-600 font-medium">Live Weather Data</span>
         </div>
         <p className="text-slate-500 text-sm">
-          Powered by advanced meteorological technology
+          Created By Ashen Ruvinda-Undergraduate Student at NSBM Green University Faculty of Computing
         </p>
       </div>
     </div>
