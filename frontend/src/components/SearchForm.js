@@ -34,14 +34,14 @@ const SearchForm = ({ onSearch }) => {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.get(`http://localhost:5000/api/weather/${city}`);
+      const response = await axios.get(`https://mern-weather-forcast-web.onrender.com/api/weather/${city}`);
       onSearch(response.data);
       setCity('');
       setShowSuggestions(false);
       
       // Save to history
       try {
-        await axios.post('http://localhost:5000/api/history', { city });
+        await axios.post('https://mern-weather-forcast-web.onrender.com/api/history', { city });
       } catch (historyError) {
         console.error('Error saving to history:', historyError);
       }

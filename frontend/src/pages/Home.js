@@ -13,7 +13,7 @@ const Home = () => {
     const fetchHistory = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('http://localhost:5000/api/history');
+        const response = await axios.get('https://mern-weather-forcast-web.onrender.com/api/history');
         setHistory(response.data);
       } catch (error) {
         console.error('Error fetching history:', error);
@@ -35,7 +35,7 @@ const Home = () => {
   const handleHistoryClick = async (cityName) => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:5000/api/weather/${cityName}`);
+      const response = await axios.get(`https://mern-weather-forcast-web.onrender.com/api/weather/${cityName}`);
       setWeather(response.data);
     } catch (error) {
       console.error('Error fetching weather for history item:', error);
