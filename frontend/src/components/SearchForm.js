@@ -27,7 +27,7 @@ const SearchForm = ({ onSearch }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!city.trim()) {
-      setError('Please enter a city name');
+      setError('Enter a city name');
       return;
     }
 
@@ -46,7 +46,7 @@ const SearchForm = ({ onSearch }) => {
         console.error('Error saving to history:', historyError);
       }
     } catch (error) {
-      setError(error.response?.data?.message || 'City not found or API error');
+      setError(error.response?.data?.message || 'City not found.Check the spelling or try a different city.');
     } finally {
       setLoading(false);
     }
